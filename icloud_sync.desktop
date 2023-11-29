@@ -1,0 +1,17 @@
+[Desktop Entry]
+Comment[en_US]=Run sync between local storage and icloud
+Comment=Run sync between local storage and icloud
+Exec=bash -c 'export PASSWORD="pwd"; python /path/to/your/script.py'
+GenericName[en_US]=
+GenericName=
+Icon=python
+MimeType=
+Name[en_US]=iCloud sync
+Name=iCloud sync
+Path=
+StartupNotify=true
+Terminal=true
+TerminalOptions=
+Type=Application
+X-KDE-SubstituteUID=false
+X-KDE-Username=
