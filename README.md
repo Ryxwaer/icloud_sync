@@ -1,18 +1,16 @@
 # icloud_sync
 script to sync Logseq folder between iCloud and my linux PC
 
-
-## docker
-
-### build
-
-`docker build -t ryxwaer/icloud_sync:latest .`
-
-### run
-
+### instalation
 ```
-docker run -it \
-    -v $HOME/icloud:/usr/src/app/Documents/icloud \
-    -v icloud_sync_cookies:/usr/src/app/cookies \
-    ryxwaer/icloud_sync:latest
+export PASSWORD=password
+python icloud_sync.py
 ```
+then login with 2fa
+
+session will be saved in the cookies
+
+### autostart
+Copy icloud_sync.desktop into/home/ryxwaer/.config/autostart/
+
+change password
