@@ -1,7 +1,7 @@
 [Desktop Entry]
 Comment[en_US]=Run sync between local storage and icloud
 Comment=Run sync between local storage and icloud
-Exec=bash -c 'export PASSWORD="pwd"; python /path/to/your/script.py'
+Exec=bash -c 'export PASSWORD="pwd"; python /path/to/your/icloud_sync.py'
 GenericName[en_US]=
 GenericName=
 Icon=python

@@ -1,5 +1,6 @@
 import os
 import time
+import subprocess
 from threading import Timer
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
@@ -166,6 +167,11 @@ observer = Observer()
 observer.schedule(event_handler, LOCAL_FOLDER, recursive=True)
 observer.start()
 print("listening for local changes...")
+
+try: # open the Logseq app
+    subprocess.Popen(["logseq"])
+except Exception:
+    pass
 
 try:
     while True:
