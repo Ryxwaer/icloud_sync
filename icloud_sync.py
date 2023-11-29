@@ -69,7 +69,7 @@ class ChangeHandler(FileSystemEventHandler):
             drive_obj.mkdir(part)
         if parts[-1] in drive_obj.dir():
             drive_obj[parts[-1]].delete()
-        time.sleep(1)
+        time.sleep(3)
         with open(file_path, 'rb') as file:
             drive_obj.upload(file)
         print(f"Uploaded to iCloud on {path}")
